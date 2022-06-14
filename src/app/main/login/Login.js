@@ -56,7 +56,7 @@ class Login extends Component {
 
                     <FuseAnimate delay={400}>
                     <Typography variant="subtitle1" color="inherit" className="max-w-512 mt-16">
-                    NUST Air Quality Monitoring Using IoT
+                    Live Stock Monitoring Using IoT
                     </Typography>
                 </FuseAnimate>
                 </div>

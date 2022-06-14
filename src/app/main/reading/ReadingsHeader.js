@@ -18,7 +18,7 @@ class ReadingsHeader extends Component {
                         </FuseAnimate>
                         <FuseAnimate animation="transition.slideLeftIn" delay={300}>
                             <Typography variant="h6" className="hidden sm:flex">
-                                Air Readings
+                                Animal Readings
                             </Typography>
                         </FuseAnimate>
                     </div>

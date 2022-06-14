@@ -248,7 +248,7 @@ class ReadingsList extends Component {
                     ]}
                     defaultPageSize={20}
                     resizable={true}
-                    noDataText="No Air Reading found"
+                    noDataText="No Animal Reading found"
                     loading={this.state.loading}
                     showPagination={true}
                     showPaginationTop={false}
