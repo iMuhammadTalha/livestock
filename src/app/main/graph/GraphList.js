@@ -52,28 +52,7 @@ class GraphList extends Component {
                                         }
                                         ]
                                     }}
-                                    options={{
-                                        title:{
-                                        display:true,
-                                        text:'Body Temperature',
-                                        fontSize:15
-                                        },
-                                        legend:{
-                                        display:true,
-                                        position:'right'
-                                        },
-                                        scales: {
-                                            yAxes: [{
-                                                display: true,
-                                                ticks: {
-                                                    suggestedMin: 0,    // minimum will be 0, unless there is a lower value.
-                                                    // OR //
-                                                    beginAtZero: true,   // minimum value will be 0.
-                                                    // suggestedMax: 500
-                                                }
-                                            }]
-                                        }
-                                    }}
+                                    
                                     />
                             </Paper>
                     </div>
@@ -96,28 +75,7 @@ class GraphList extends Component {
                                         }
                                         ]
                                     }}
-                                    options={{
-                                        title:{
-                                        display:true,
-                                        text:'Atmospheric Temperature',
-                                        fontSize:15
-                                        },
-                                        legend:{
-                                        display:true,
-                                        position:'right'
-                                        },
-                                        scales: {
-                                            yAxes: [{
-                                                display: true,
-                                                ticks: {
-                                                    suggestedMin: 0,    // minimum will be 0, unless there is a lower value.
-                                                    // OR //
-                                                    beginAtZero: true,   // minimum value will be 0.
-                                                    // suggestedMax: 500
-                                                }
-                                            }]
-                                        }
-                                    }}
+                                    
                                     />
                             </Paper>
                     </div>
@@ -140,28 +98,7 @@ class GraphList extends Component {
                                         }
                                         ]
                                     }}
-                                    options={{
-                                        title:{
-                                        display:true,
-                                        text:'Atmospheric Humidity',
-                                        fontSize:15
-                                        },
-                                        legend:{
-                                        display:true,
-                                        position:'right'
-                                        },
-                                        scales: {
-                                            yAxes: [{
-                                                display: true,
-                                                ticks: {
-                                                    suggestedMin: 0,    // minimum will be 0, unless there is a lower value.
-                                                    // OR //
-                                                    beginAtZero: true,   // minimum value will be 0.
-                                                    // suggestedMax: 500
-                                                }
-                                            }]
-                                        }
-                                    }}
+                                    
                                     />
                             </Paper>
                     </div>
@@ -184,28 +121,7 @@ class GraphList extends Component {
                                         }
                                         ]
                                     }}
-                                    options={{
-                                        title:{
-                                        display:true,
-                                        text:'Beat / Min',
-                                        fontSize:15
-                                        },
-                                        legend:{
-                                        display:true,
-                                        position:'right'
-                                        },
-                                        scales: {
-                                            yAxes: [{
-                                                display: true,
-                                                ticks: {
-                                                    suggestedMin: 0,    // minimum will be 0, unless there is a lower value.
-                                                    // OR //
-                                                    beginAtZero: true,   // minimum value will be 0.
-                                                    // suggestedMax: 500
-                                                }
-                                            }]
-                                        }
-                                    }}
+                                    
                                     />
                             </Paper>
                     </div>
@@ -228,28 +144,7 @@ class GraphList extends Component {
                                         }
                                         ]
                                     }}
-                                    options={{
-                                        title:{
-                                        display:true,
-                                        text:'Ax',
-                                        fontSize:15
-                                        },
-                                        legend:{
-                                        display:true,
-                                        position:'right'
-                                        },
-                                        scales: {
-                                            yAxes: [{
-                                                display: true,
-                                                ticks: {
-                                                    suggestedMin: 0,    // minimum will be 0, unless there is a lower value.
-                                                    // OR //
-                                                    beginAtZero: true,   // minimum value will be 0.
-                                                    // suggestedMax: 500
-                                                }
-                                            }]
-                                        }
-                                    }}
+                                    
                                     />
                             </Paper>
                     </div>
@@ -271,28 +166,7 @@ class GraphList extends Component {
                                         }
                                         ]
                                     }}
-                                    options={{
-                                        title:{
-                                        display:true,
-                                        text:'Ay',
-                                        fontSize:15
-                                        },
-                                        legend:{
-                                        display:true,
-                                        position:'right'
-                                        },
-                                        scales: {
-                                            yAxes: [{
-                                                display: true,
-                                                ticks: {
-                                                    suggestedMin: 0,    // minimum will be 0, unless there is a lower value.
-                                                    // OR //
-                                                    beginAtZero: true,   // minimum value will be 0.
-                                                    // suggestedMax: 500
-                                                }
-                                            }]
-                                        }
-                                    }}
+                                    
                                     />
                             </Paper>
                     </div>
@@ -315,28 +189,7 @@ class GraphList extends Component {
                                         }
                                         ]
                                     }}
-                                    options={{
-                                        title:{
-                                        display:true,
-                                        text:'Az',
-                                        fontSize:15
-                                        },
-                                        legend:{
-                                        display:true,
-                                        position:'right'
-                                        },
-                                        scales: {
-                                            yAxes: [{
-                                                display: true,
-                                                ticks: {
-                                                    suggestedMin: 0,    // minimum will be 0, unless there is a lower value.
-                                                    // OR //
-                                                    beginAtZero: true,   // minimum value will be 0.
-                                                    // suggestedMax: 500
-                                                }
-                                            }]
-                                        }
-                                    }}
+                                    
                                     />
                             </Paper>
                     </div>
@@ -359,28 +212,7 @@ class GraphList extends Component {
                                         }
                                         ]
                                     }}
-                                    options={{
-                                        title:{
-                                        display:true,
-                                        text:'Gx',
-                                        fontSize:15
-                                        },
-                                        legend:{
-                                        display:true,
-                                        position:'right'
-                                        },
-                                        scales: {
-                                            yAxes: [{
-                                                display: true,
-                                                ticks: {
-                                                    suggestedMin: 0,    // minimum will be 0, unless there is a lower value.
-                                                    // OR //
-                                                    beginAtZero: true,   // minimum value will be 0.
-                                                    // suggestedMax: 500
-                                                }
-                                            }]
-                                        }
-                                    }}
+                                    
                                     />
                             </Paper>
                     </div>
@@ -402,28 +234,7 @@ class GraphList extends Component {
                                         }
                                         ]
                                     }}
-                                    options={{
-                                        title:{
-                                        display:true,
-                                        text:'Gy',
-                                        fontSize:15
-                                        },
-                                        legend:{
-                                        display:true,
-                                        position:'right'
-                                        },
-                                        scales: {
-                                            yAxes: [{
-                                                display: true,
-                                                ticks: {
-                                                    suggestedMin: 0,    // minimum will be 0, unless there is a lower value.
-                                                    // OR //
-                                                    beginAtZero: true,   // minimum value will be 0.
-                                                    // suggestedMax: 500
-                                                }
-                                            }]
-                                        }
-                                    }}
+                                    
                                     />
                             </Paper>
                     </div>
@@ -445,28 +256,7 @@ class GraphList extends Component {
                                         }
                                         ]
                                     }}
-                                    options={{
-                                        title:{
-                                        display:true,
-                                        text:'Gz',
-                                        fontSize:15
-                                        },
-                                        legend:{
-                                        display:true,
-                                        position:'right'
-                                        },
-                                        scales: {
-                                            yAxes: [{
-                                                display: true,
-                                                ticks: {
-                                                    suggestedMin: 0,    // minimum will be 0, unless there is a lower value.
-                                                    // OR //
-                                                    beginAtZero: true,   // minimum value will be 0.
-                                                    // suggestedMax: 500
-                                                }
-                                            }]
-                                        }
-                                    }}
+                                    
                                     />
                             </Paper>
                     </div>
