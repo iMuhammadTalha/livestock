@@ -18,7 +18,7 @@ export function getAllGraphs() {
 export const getGraphsData = () => (dispatch) => {
     
     
-    let query = "air/get-aqi-graph/" +selectedSearch.nodeId ;
+    let query = "livestock/get-graph/" +selectedSearch.nodeId ;
     
     
     axios

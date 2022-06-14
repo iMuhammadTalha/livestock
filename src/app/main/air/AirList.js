@@ -54,8 +54,8 @@ class AirList extends Component {
                             className: 'justify-center font-bold'
                         },
                         {
-                            Header: 'CH4',
-                            accessor: 'ch4',
+                            Header: 'Body Temperature',
+                            accessor: 'body_temperature',
                             filterable: false,
                             className: 'justify-center font-bold',
 
@@ -73,8 +73,8 @@ class AirList extends Component {
                             //   },
                         },
                         {
-                            Header: 'CO',
-                            accessor: 'co',
+                            Header: 'Atmospheric Temperature',
+                            accessor: 'atmospheric_temperature',
                             filterable: false,
                             className: 'justify-center font-bold',
                             // getProps: (state, rowInfo) => {
@@ -91,8 +91,8 @@ class AirList extends Component {
                             //   },
                         },
                         {
-                            Header: 'Dust',
-                            accessor: 'dust',
+                            Header: 'Atmospheric Humidity',
+                            accessor: 'atmospheric_humidity',
                             filterable: false,
                             className: 'justify-center font-bold',
                             // getProps: (state, rowInfo) => {
@@ -110,8 +110,8 @@ class AirList extends Component {
                         },
                         
                         {
-                            Header: 'NH3',
-                            accessor: 'nh3',
+                            Header: 'Beat / Min',
+                            accessor: 'beat_per_min',
                             filterable: false,
                             className: 'justify-center font-bold',
                             // getProps: (state, rowInfo) => {
@@ -128,8 +128,8 @@ class AirList extends Component {
                             //   },
                         },
                         {
-                            Header: 'NO2',
-                            accessor: 'no2',
+                            Header: 'Ax',
+                            accessor: 'ax',
                             filterable: false,
                             className: 'justify-center font-bold',
                             // getProps: (state, rowInfo) => {
@@ -146,8 +146,8 @@ class AirList extends Component {
                             //   },
                         },
                         {
-                            Header: 'CO2',
-                            accessor: 'co2',
+                            Header: 'Ay',
+                            accessor: 'ay',
                             filterable: false,
                             className: 'justify-center font-bold',
                             // getProps: (state, rowInfo) => {
@@ -164,20 +164,32 @@ class AirList extends Component {
                             //   },
                         },
                         {
-                            Header: 'Humidity',
-                            accessor: 'humidity',
+                            Header: 'Az',
+                            accessor: 'az',
                             filterable: false,
                             className: 'justify-center font-bold'
                         },
                         {
-                            Header: 'Temperature',
-                            accessor: 'temperature',
+                            Header: 'gx',
+                            accessor: 'gx',
                             filterable: false,
                             className: 'justify-center font-bold'
                         },
                         {
-                            Header: 'Node',
-                            accessor: 'node_id',
+                            Header: 'gy',
+                            accessor: 'gy',
+                            filterable: false,
+                            className: 'justify-center font-bold'
+                        },
+                        {
+                            Header: 'gz',
+                            accessor: 'gz',
+                            filterable: false,
+                            className: 'justify-center font-bold'
+                        },
+                        {
+                            Header: 'Animal',
+                            accessor: 'animal_id',
                             filterable: false,
                             className: 'justify-center font-bold'
                         }

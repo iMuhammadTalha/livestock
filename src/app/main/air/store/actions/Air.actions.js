@@ -36,7 +36,7 @@ export const getAirsPaginationData = (page, pageSize, sorted) => (dispatch) => {
     }
     let query = "";
     if(selectedSearch.nodeId=="Undefined"){
-        query = "air/get-all-readings/" +
+        query = "livestock/get-all-readings/" +
         page +
         "/" +
         pageSize +
@@ -45,7 +45,7 @@ export const getAirsPaginationData = (page, pageSize, sorted) => (dispatch) => {
         "/" +
         sortingOrder;
     } else {
-        query = "air/get-a-node-all-readings/" +
+        query = "livestock/get-a-node-all-readings/" +
         selectedSearch.nodeId +
         "/" +
         page +
@@ -72,7 +72,7 @@ export const getAirsPaginationData = (page, pageSize, sorted) => (dispatch) => {
         .catch((err) => {
             dispatch(
                 showMessage({
-                    message: "Unable to get airs...",
+                    message: "Unable to get animals data...",
                     variant: "error"
                 })
             );

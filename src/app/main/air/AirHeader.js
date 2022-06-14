@@ -42,7 +42,7 @@ class AirHeader extends Component {
                     <div className="flex flex-1 items-center justify-center pr-8 sm:px-12">
                         
                         <div className="d-flex flex-column flex-1 items-center justify-center pr-6 sm:px-4">
-                            <label>Select Node</label>
+                            <label>Select Animal</label>
                             <MuiThemeProvider theme={mainTheme}>
                                 <FuseAnimate animation="transition.slideLeftIn" delay={300}>
                                     <Paper
@@ -52,13 +52,12 @@ class AirHeader extends Component {
                                         <select
                                             style={{width: "100%"}}
                                             onChange={this.handleChange}
-                                            value={this.state.nodeId}
-                                            id="nodeId"
-                                            name="nodeId"
+                                            value={this.state.animalId}
+                                            id="animalId"
+                                            name="animalId"
                                         >
                                             <option value="">All</option>
-                                            <option value="1">Node 1</option>
-                                            <option value="2">Node 2</option>
+                                            <option value="1">Animal 1</option>
                                         </select>
                                     </Paper>
                                 </FuseAnimate>

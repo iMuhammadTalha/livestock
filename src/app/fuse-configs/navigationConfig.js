@@ -27,7 +27,7 @@ if (token) {
 const superAdminNavigationConfig = [
     {
         id: 'Readings',
-        title: 'Live Stock Monitor Reading',
+        title: 'Menu',
         type: 'group',
         icon: 'whatshot',
         children: [
@@ -38,19 +38,19 @@ const superAdminNavigationConfig = [
             //     icon: 'whatshot',
             //     url: '/dashboard'
             // },
-            {
-                id: 'airdashboard',
-                title: 'Dashbaord',
-                type: 'item',
-                icon: 'whatshot',
-                url: '/airdashboard'
-            },
+            // {
+            //     id: 'airdashboard',
+            //     title: 'Dashbaord',
+            //     type: 'item',
+            //     icon: 'whatshot',
+            //     url: '/airdashboard'
+            // },
             {
                 id: 'animal',
-                title: 'Live Stock Monitor Readings',
+                title: 'Tabular Data',
                 type: 'item',
                 icon: 'whatshot',
-                url: '/air'
+                url: '/data'
             },
             {
                 id: 'graph',

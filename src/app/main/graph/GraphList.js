@@ -19,7 +19,7 @@ class GraphList extends Component {
     
 
     render() {
-        const { graphs, dates, AQIAvg, nh3Avg, coAvg, no2Avg, ch4Avg, co2Avg, dustAvg, humitidyAvg, temperatureAvg } = this.props;
+        const { graphs, dates, bodyTemperatureAvg, atmosphericTemperatureAvg, atmosphericHumidityAvg, beatPerMinAvg, axAvg, ayAvg, azAvg, gxAvg, gyAvg, gzAvg } = this.props;
         let data = graphs;
 
         if (!Array.isArray(data)) {
@@ -34,52 +34,7 @@ class GraphList extends Component {
                         animation: "transition.slideUpBigIn"
                     }}
                 >
-                    <div className="mb-16 w-full">
-                        <div className="widget w-full p-16">
-                            <Paper className="w-full rounded-8 border-1">
-                                <Line
-                                    data={{
-                                        labels: dates,
-                                        datasets: [
-                                        {
-                                            label: 'AQI',
-                                            fill: false,
-                                            lineTension: 0.5,
-                                            backgroundColor: 'rgba(75,192,192,1)',
-                                            borderColor: 'rgba(0,0,0,1)',
-                                            borderWidth: 2,
-                                            data: AQIAvg
-                                        }
-                                        ]
-                                    }}
-                                    options={{
-                                        title:{
-                                        display:true,
-                                        text:'AQI',
-                                        fontSize:15
-                                        },
-                                        legend:{
-                                        display:true,
-                                        position:'right'
-                                        },
-                                        scales: {
-                                            yAxes: [{
-                                                display: true,
-                                                ticks: {
-                                                    suggestedMin: 0,    // minimum will be 0, unless there is a lower value.
-                                                    // OR //
-                                                    beginAtZero: true,   // minimum value will be 0.
-                                                    suggestedMax: 500
-                                                }
-                                            }]
-                                        }
-                                    }}
-                                    />
-                            </Paper>
-                        </div>
-                    </div>
-
-
+                    
                     <div className="widget flex w-full sm:w-1/2 md:w-1/2 p-12">
                     <Paper className="w-full rounded-8 border-1">
                                 <Line
@@ -87,20 +42,20 @@ class GraphList extends Component {
                                         labels: dates,
                                         datasets: [
                                         {
-                                            label: 'NH3',
+                                            label: 'Body Temperature',
                                             fill: false,
                                             lineTension: 0.5,
                                             backgroundColor: 'rgba(75,192,192,1)',
                                             borderColor: 'rgba(0,0,0,1)',
                                             borderWidth: 2,
-                                            data: nh3Avg
+                                            data: bodyTemperatureAvg
                                         }
                                         ]
                                     }}
                                     options={{
                                         title:{
                                         display:true,
-                                        text:'NH3',
+                                        text:'Body Temperature',
                                         fontSize:15
                                         },
                                         legend:{
@@ -131,20 +86,20 @@ class GraphList extends Component {
                                         labels: dates,
                                         datasets: [
                                         {
-                                            label: 'CO',
+                                            label: 'Atmospheric Temperature',
                                             fill: false,
                                             lineTension: 0.5,
                                             backgroundColor: 'rgba(75,192,192,1)',
                                             borderColor: 'rgba(0,0,0,1)',
                                             borderWidth: 2,
-                                            data: coAvg
+                                            data: atmosphericTemperatureAvg
                                         }
                                         ]
                                     }}
                                     options={{
                                         title:{
                                         display:true,
-                                        text:'CO',
+                                        text:'Atmospheric Temperature',
                                         fontSize:15
                                         },
                                         legend:{
@@ -175,20 +130,20 @@ class GraphList extends Component {
                                         labels: dates,
                                         datasets: [
                                         {
-                                            label: 'NO2',
+                                            label: 'Atmospheric Humidity',
                                             fill: false,
                                             lineTension: 0.5,
                                             backgroundColor: 'rgba(75,192,192,1)',
                                             borderColor: 'rgba(0,0,0,1)',
                                             borderWidth: 2,
-                                            data: no2Avg
+                                            data: atmosphericHumidityAvg
                                         }
                                         ]
                                     }}
                                     options={{
                                         title:{
                                         display:true,
-                                        text:'NO2',
+                                        text:'Atmospheric Humidity',
                                         fontSize:15
                                         },
                                         legend:{
@@ -219,20 +174,20 @@ class GraphList extends Component {
                                         labels: dates,
                                         datasets: [
                                         {
-                                            label: 'CH4',
+                                            label: 'Beat / Min',
                                             fill: false,
                                             lineTension: 0.5,
                                             backgroundColor: 'rgba(75,192,192,1)',
                                             borderColor: 'rgba(0,0,0,1)',
                                             borderWidth: 2,
-                                            data: ch4Avg
+                                            data: beatPerMinAvg
                                         }
                                         ]
                                     }}
                                     options={{
                                         title:{
                                         display:true,
-                                        text:'CH4',
+                                        text:'Beat / Min',
                                         fontSize:15
                                         },
                                         legend:{
@@ -263,20 +218,20 @@ class GraphList extends Component {
                                         labels: dates,
                                         datasets: [
                                         {
-                                            label: 'CO2',
+                                            label: 'Ax',
                                             fill: false,
                                             lineTension: 0.5,
                                             backgroundColor: 'rgba(75,192,192,1)',
                                             borderColor: 'rgba(0,0,0,1)',
                                             borderWidth: 2,
-                                            data: co2Avg
+                                            data: axAvg
                                         }
                                         ]
                                     }}
                                     options={{
                                         title:{
                                         display:true,
-                                        text:'CO2',
+                                        text:'Ax',
                                         fontSize:15
                                         },
                                         legend:{
@@ -306,64 +261,20 @@ class GraphList extends Component {
                                         labels: dates,
                                         datasets: [
                                         {
-                                            label: 'Dust',
+                                            label: 'Ay',
                                             fill: false,
                                             lineTension: 0.5,
                                             backgroundColor: 'rgba(75,192,192,1)',
                                             borderColor: 'rgba(0,0,0,1)',
                                             borderWidth: 2,
-                                            data: dustAvg
+                                            data: ayAvg
                                         }
                                         ]
                                     }}
                                     options={{
                                         title:{
                                         display:true,
-                                        text:'Dust',
-                                        fontSize:15
-                                        },
-                                        legend:{
-                                        display:true,
-                                        position:'right'
-                                        },
-                                        scales: {
-                                            yAxes: [{
-                                                display: true,
-                                                ticks: {
-                                                    suggestedMin: 0,    // minimum will be 0, unless there is a lower value.
-                                                    // OR //
-                                                    beginAtZero: true,   // minimum value will be 0.
-                                                    // suggestedMax: 500
-                                                }
-                                            }]
-                                        }
-                                    }}
-                                    />
-                            </Paper>
-                    </div>
-
-
-                    <div className="widget flex w-full sm:w-1/2 md:w-1/2 p-12">
-                    <Paper className="w-full rounded-8 border-1">
-                                <Line
-                                    data={{
-                                        labels: dates,
-                                        datasets: [
-                                        {
-                                            label: 'Humidity',
-                                            fill: false,
-                                            lineTension: 0.5,
-                                            backgroundColor: 'rgba(75,192,192,1)',
-                                            borderColor: 'rgba(0,0,0,1)',
-                                            borderWidth: 2,
-                                            data: humitidyAvg
-                                        }
-                                        ]
-                                    }}
-                                    options={{
-                                        title:{
-                                        display:true,
-                                        text:'Humidity',
+                                        text:'Ay',
                                         fontSize:15
                                         },
                                         legend:{
@@ -394,20 +305,20 @@ class GraphList extends Component {
                                         labels: dates,
                                         datasets: [
                                         {
-                                            label: 'Temperature',
+                                            label: 'Az',
                                             fill: false,
                                             lineTension: 0.5,
                                             backgroundColor: 'rgba(75,192,192,1)',
                                             borderColor: 'rgba(0,0,0,1)',
                                             borderWidth: 2,
-                                            data: temperatureAvg
+                                            data: azAvg
                                         }
                                         ]
                                     }}
                                     options={{
                                         title:{
                                         display:true,
-                                        text:'Temperature',
+                                        text:'Az',
                                         fontSize:15
                                         },
                                         legend:{
@@ -430,6 +341,135 @@ class GraphList extends Component {
                             </Paper>
                     </div>
 
+
+                    <div className="widget flex w-full sm:w-1/2 md:w-1/2 p-12">
+                    <Paper className="w-full rounded-8 border-1">
+                                <Line
+                                    data={{
+                                        labels: dates,
+                                        datasets: [
+                                        {
+                                            label: 'Gx',
+                                            fill: false,
+                                            lineTension: 0.5,
+                                            backgroundColor: 'rgba(75,192,192,1)',
+                                            borderColor: 'rgba(0,0,0,1)',
+                                            borderWidth: 2,
+                                            data: gxAvg
+                                        }
+                                        ]
+                                    }}
+                                    options={{
+                                        title:{
+                                        display:true,
+                                        text:'Gx',
+                                        fontSize:15
+                                        },
+                                        legend:{
+                                        display:true,
+                                        position:'right'
+                                        },
+                                        scales: {
+                                            yAxes: [{
+                                                display: true,
+                                                ticks: {
+                                                    suggestedMin: 0,    // minimum will be 0, unless there is a lower value.
+                                                    // OR //
+                                                    beginAtZero: true,   // minimum value will be 0.
+                                                    // suggestedMax: 500
+                                                }
+                                            }]
+                                        }
+                                    }}
+                                    />
+                            </Paper>
+                    </div>
+
+                    <div className="widget flex w-full sm:w-1/2 md:w-1/2 p-12">
+                    <Paper className="w-full rounded-8 border-1">
+                                <Line
+                                    data={{
+                                        labels: dates,
+                                        datasets: [
+                                        {
+                                            label: 'Gy',
+                                            fill: false,
+                                            lineTension: 0.5,
+                                            backgroundColor: 'rgba(75,192,192,1)',
+                                            borderColor: 'rgba(0,0,0,1)',
+                                            borderWidth: 2,
+                                            data: gyAvg
+                                        }
+                                        ]
+                                    }}
+                                    options={{
+                                        title:{
+                                        display:true,
+                                        text:'Gy',
+                                        fontSize:15
+                                        },
+                                        legend:{
+                                        display:true,
+                                        position:'right'
+                                        },
+                                        scales: {
+                                            yAxes: [{
+                                                display: true,
+                                                ticks: {
+                                                    suggestedMin: 0,    // minimum will be 0, unless there is a lower value.
+                                                    // OR //
+                                                    beginAtZero: true,   // minimum value will be 0.
+                                                    // suggestedMax: 500
+                                                }
+                                            }]
+                                        }
+                                    }}
+                                    />
+                            </Paper>
+                    </div>
+
+                    <div className="widget flex w-full sm:w-1/2 md:w-1/2 p-12">
+                    <Paper className="w-full rounded-8 border-1">
+                                <Line
+                                    data={{
+                                        labels: dates,
+                                        datasets: [
+                                        {
+                                            label: 'Gz',
+                                            fill: false,
+                                            lineTension: 0.5,
+                                            backgroundColor: 'rgba(75,192,192,1)',
+                                            borderColor: 'rgba(0,0,0,1)',
+                                            borderWidth: 2,
+                                            data: gzAvg
+                                        }
+                                        ]
+                                    }}
+                                    options={{
+                                        title:{
+                                        display:true,
+                                        text:'Gz',
+                                        fontSize:15
+                                        },
+                                        legend:{
+                                        display:true,
+                                        position:'right'
+                                        },
+                                        scales: {
+                                            yAxes: [{
+                                                display: true,
+                                                ticks: {
+                                                    suggestedMin: 0,    // minimum will be 0, unless there is a lower value.
+                                                    // OR //
+                                                    beginAtZero: true,   // minimum value will be 0.
+                                                    // suggestedMax: 500
+                                                }
+                                            }]
+                                        }
+                                    }}
+                                    />
+                            </Paper>
+                    </div>
 
                 </FuseAnimateGroup>
             </div>
@@ -448,18 +488,19 @@ function mapDispatchToProps(dispatch) {
 
 function mapStateToProps({ GraphApp }) {
     
-    
+    console.log('Graph APP',GraphApp);
     return {
-        nh3Avg: GraphApp.GraphReducer.nh3Avg,
-        coAvg: GraphApp.GraphReducer.coAvg,
-        no2Avg: GraphApp.GraphReducer.no2Avg,
-        ch4Avg: GraphApp.GraphReducer.ch4Avg,
-        co2Avg: GraphApp.GraphReducer.co2Avg,
-        dustAvg: GraphApp.GraphReducer.dustAvg,
-        humitidyAvg: GraphApp.GraphReducer.humitidyAvg,
-        temperatureAvg: GraphApp.GraphReducer.temperatureAvg,
-        dates: GraphApp.GraphReducer.dates,
-        AQIAvg: GraphApp.GraphReducer.AQIAvg
+        bodyTemperatureAvg: GraphApp.GraphReducer.bodyTemperatureAvg,
+        atmosphericTemperatureAvg: GraphApp.GraphReducer.atmosphericTemperatureAvg,
+        atmosphericHumidityAvg: GraphApp.GraphReducer.atmosphericHumidityAvg,
+        beatPerMinAvg: GraphApp.GraphReducer.beatPerMinAvg,
+        axAvg: GraphApp.GraphReducer.axAvg,
+        ayAvg: GraphApp.GraphReducer.ayAvg,
+        azAvg: GraphApp.GraphReducer.azAvg,
+        gxAvg: GraphApp.GraphReducer.gxAvg,
+        gyAvg: GraphApp.GraphReducer.gyAvg,
+        gzAvg: GraphApp.GraphReducer.gzAvg,
+        dates: GraphApp.GraphReducer.dates
     };
 }
 
